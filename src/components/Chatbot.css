@@ -1,0 +1,65 @@
+.chatbot-container {
+  position: fixed;
+  bottom: 80px; /* Ajuste para modificar a posição na tela */
+  right: 20px;
+  width: 300px; /* Use 'width' ao invés de 'max-width' para um tamanho fixo */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(100%);
+  z-index: 1000; /* Garante que o chatbot esteja acima de outros elementos */
+}
+
+.chatbot-container.open {
+  transform: translateY(0);
+}
+
+.chatbot-toggle {
+  background-color: #0077ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.chatbot-toggle:hover {
+  background-color: #005bb5;
+}
+
+.chatbot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.chatbot-logo {
+  height: 80px;
+}
+
+.chatbot-close {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.chatbot-content {
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.chatbot-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}

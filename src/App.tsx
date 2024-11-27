@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Sidebar } from './components/Sidebar';
 import { Footer } from './components/Footer';
-import { Home } from './components/Home';
+import { Home } from './pages/Home';
 import Chatbot from './components/Chatbot';
-
+import CadastroUsuarios from './pages/CadastroUsuarios';
 import './App.css';
 
 export const App = () => {
@@ -38,12 +38,8 @@ export const App = () => {
         />
         <main className={`main-content ${isSidebarOpen ? 'sidebar-open' : ''}`}>
           {showHomeCards && <Home />}
-          {!showHomeCards && (
-            <div className="subview-content">
-              <h2>{subView}</h2>
-              {/* Content for the selected subview will be rendered here */}
-            </div>
-          )}
+          {!showHomeCards && currentView === 'cadastro' && subView === 'Usuários' && <CadastroUsuarios />}
+          {/* Adicione mais verificações para outros componentes conforme necessário */}
         </main>
       </div>
       <Footer />
@@ -52,4 +48,5 @@ export const App = () => {
 }
 
 export default App;
+
 

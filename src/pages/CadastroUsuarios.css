@@ -6,14 +6,15 @@
   width: 90vw;
   margin: 0 auto;
   margin-left: 50px;
-  padding: 0 12px;
+  padding: 0 10px;
   overflow-x: hidden;
-  gap: 5px
+  gap: 5px;
+  font-size: var(--font-size)
 }
 
 /* Estilo do cabeçalho */
 .header {  
-  width: 79vw;
+  width: 9vw;
   height: 90px;
   background-color: #319795;
   color: white;
@@ -45,6 +46,7 @@
   border: 2px solid orange;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   width: 100%;
+  height: 45%;
   margin: 0;
   border-radius: 0;
 }
@@ -79,7 +81,8 @@
 /* Grupo de rádio */
 .radio-group {
   display: flex;
-  gap: 16px;
+  padding: 20px;
+  gap: 19px;
 }
 
 /* Botão de envio */

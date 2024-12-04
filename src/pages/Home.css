@@ -2,21 +2,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
   margin: 0;
   background-color: #f5f5f5;
 }
 
 .home-container {
   width: 100%;
-  max-width: 1200px;
-  padding: 2rem 1rem;
-  margin-top: -3%;
+  max-width: 800px; /* diminui o tamanho container por igual lado esquerdo e direito */
+  padding: 0,1rem;
 }
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns */
+  grid-template-columns: repeat(4, 1fr); /* colunas fixas até 4 columns */
   gap: 1.5rem;
   margin-top: 2rem;
 }
@@ -78,3 +77,6 @@ body {
     height: 140px;
   }
 }
+
+
+

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, ChangeEvent, FormEvent } from 'react';
 import './CadastroUsuarios.css';
 
 function App() {
@@ -14,14 +14,15 @@ function App() {
     sexo: "Masculino",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { id, value } = e.target;
     setFormData((prev) => ({ ...prev, [id]: value }));
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
     console.log("Dados enviados:", formData);
-    alert("Formulário enviado com sucesso!");
+    alert("Cadastro de usuários enviado com sucesso!");
   };
 
   return (
@@ -31,10 +32,7 @@ function App() {
       </header>
       <div className="form-wrapper">
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            handleSubmit();
-          }}
+          onSubmit={handleSubmit}
           className="form"
         >
           <div className="form-row">
@@ -120,4 +118,5 @@ function App() {
 }
 
 export default App;
+
 

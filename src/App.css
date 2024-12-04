@@ -1,18 +1,18 @@
 :root {
-  --navbar-height: 60px;
-  --footer-height: 60px;
-  --sidebar-width: 260px;
+  --navbar-height: 40px;
+  --footer-height: 45px;
+  --font-size: 12px;
+  --sidebar-width: 135px;
   --primary-color: #333;
   --card-yellow: #ffd700;
   overflow: hidden
 }
 
 .app-container {
-  min-height: 150vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
 }
-
 
 .content-wrapper {
   flex: 1;
@@ -23,7 +23,7 @@
 
 .main-content {
   flex: 1;
-  padding: 2rem;
+  padding: 10px;
   transition: margin-left 0.3s ease;
 }
 

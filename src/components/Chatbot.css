@@ -1,6 +1,6 @@
 .chatbot-container {
   position: fixed;
-  bottom: 80px; /* Ajuste para modificar a posição na tela */
+  bottom: 50px; /* Ajuste para modificar a posição na tela */
   right: 20px;
   width: 300px; /* Use 'width' ao invés de 'max-width' para um tamanho fixo */
   border: 1px solid #ccc;

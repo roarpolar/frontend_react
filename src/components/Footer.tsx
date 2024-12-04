@@ -1,4 +1,4 @@
-import React from 'react';
+import 'react';
 import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import './Footer.css';
 

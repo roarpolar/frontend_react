@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Sidebar } from './components/Sidebar';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import Chatbot from './components/Chatbot';
 import CadastroUsuarios from './pages/CadastroUsuarios';
+import UnidadesManutencao from './pages/UnidadesManutencao'; 
 import './App.css';
 
 export const App = () => {
@@ -39,6 +40,7 @@ export const App = () => {
         <main className={`main-content ${isSidebarOpen ? 'sidebar-open' : ''}`}>
           {showHomeCards && <Home />}
           {!showHomeCards && currentView === 'cadastro' && subView === 'Usuários' && <CadastroUsuarios />}
+          {!showHomeCards && currentView === 'cadastro' && subView === 'Unidades de Manutenção' && <UnidadesManutencao />}
           {/* Adicione mais verificações para outros componentes conforme necessário */}
         </main>
       </div>

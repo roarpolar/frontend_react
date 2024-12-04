@@ -1,5 +1,6 @@
 .footer {
-  position: fixed;
+  position: absolute;
+  margin-top: auto;
   bottom: 0;
   left: 0;
   right: 0;
@@ -16,8 +17,8 @@
 
 .social-links {
   display: flex;
-  gap: 1.5rem;
-  margin-bottom: 0.5rem;
+  gap: 1.1rem;
+  margin-bottom: 0.2rem;
 }
 
 .social-link {
@@ -31,7 +32,7 @@
 }
 
 .copyright {
-  font-size: 0.875rem;
+  font-size: 0.6rem;
   margin: 0;
 }
 
